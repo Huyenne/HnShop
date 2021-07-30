@@ -104,6 +104,25 @@
                         <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
                     </ul>
                 </nav>
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <i class="fas fa-fish header__logo-img"></i>
+                    </div>
+                    <div class="header__name">Huyenne</div>
+                    <div class="header__search">
+                        <input type="text" name="" id="" class="header__search-input input" placeholder="Bạn muốn tìm gì?">
+                        <button class="header__search-btn">
+                            <i class="fas fa-search header__search-btn-icon"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <i class="fas fa-shopping-cart header__cart-logo"></i>
+                    </div>
+                    <div class="header__footer">
+                        <i class="fas fa-cat header__footer-icon"></i>
+                    </div>
+                </div>
+
             </div>
         </header>
 
@@ -116,57 +135,109 @@
         </footer>
     </div>
 
-    <div class="modal">
+    <!-- <div class="modal">
         <div class="modal__overlay">
 
         </div>
 
         <div class="modal__body">
-            <div class="modal__inner">
+            <div class="modal__inner"> -->
                 <!-- viet content -->
-
-                <div class="auth-form">
-                    <div class="auth-form__heading">Đăng ký</div>
-                    <span class="auth-form__switch-btn">Đăng nhập</span>
-
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Tên đăng nhập">
+                <!-- Register form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
                         </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class=" input auth-form__input" placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="input auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="input auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
                         </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy">
+                                Bằng việc đăng kí dịch vụ, bạn đã chấp nhận
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
                         </div>
                     </div>
-
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy">
-                            Bằng việc đăng kí dịch vụ, bạn đã chấp nhận
-                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
-                        </p>
-                    </div>
-
-                    <div class="auth-form__controls">
-                        <button class="btn">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
-                    </div>
-
                     <div class="auth-form__socials">
-                        <a href="" class="btn btn--with-icon">
-                            <i class="fab fa-facebook-square"></i>
-                            Kết nối với Facebook
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__social-Fb">
+                            <i class="auth-form__icon-social  fab fa-facebook-square"></i>
+                            <span class="auth-form__social-title">
+                                Kết nối với Facebook
+                            </span>
                         </a>
-                        <a href="" class="btn btn--with-icon">
-                            <i class="fab fa-google"></i>
-                            Kết nối với Google
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__social-Gg">
+                            <i class="auth-form__icon-social fab fa-google"></i>
+                            <span class="auth-form__social-title">
+                                Kết nối với Google
+                            </span>
                         </a>
                     </div>
-                </div>
-            </div>
+                </div>  -->
+
+                <!-- Login form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="input auth-form__input" placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="input auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__text-link header__navbar-item--separate">Quên mật khẩu</a>
+                                <a href="" class="auth-form__help-link auth-form__text-link auth-form__help-help"> Cần trợ giúp?</a>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__social-Fb">
+                            <i class="auth-form__icon-social  fab fa-facebook-square"></i>
+                            <span class="auth-form__social-title">
+                                Facebook
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__social-Gg">
+                            <i class="auth-form__icon-social fab fa-google"></i>
+                            <span class="auth-form__social-title">
+                                Google
+                            </span>
+                        </a>
+                    </div>
+                </div> -->
+            <!-- </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
