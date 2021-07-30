@@ -473,6 +473,6 @@
 }
 
 .header__history-item:hover {
-    cursor: none;
+    cursor: pointer;
     background-color: var(--fade-color);
 }
