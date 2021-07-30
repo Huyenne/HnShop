@@ -1,8 +1,10 @@
 :root {
     --primary:#003d75;
+    --primary-rgba: rgba(0,61,117,0.8);
     --secondary-color: #5188ca;
     --halffade-color: #0165b9;
     --fade-color: #a8c5e6;
+    --fade-rgba: rgba(168,197,230,0.2);
     --white-color : #fff;
     --black-color: #000;
     --text-color: #333;

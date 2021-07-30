@@ -127,6 +127,7 @@
     animation: NotifyFadeIn ease-in .2s;
     display: none;
     box-shadow: #333;
+    z-index: 1;
 }
 
 .header__notify::before {
@@ -219,7 +220,7 @@
 .header__notify-desc {
     display: block;
     font-size: 1.2rem;
-    color: #333;
+    color: var(--text-color);
     padding: 4px 0;
 }
 
@@ -373,10 +374,19 @@
 
 .header__search {
     flex: 1;
-    height: 40px;
+    height: 36px;
     display: flex;
     background-color: var(--white-color);
     border-radius: 2px;
+}
+
+.header__search-input-wrap {
+    flex: 1;
+    position: relative;
+}
+
+.header__search-input:focus ~ .header__search-history {
+    display: block;
 }
 
 .header__search-input {
@@ -385,12 +395,19 @@
 
 .header__search-btn {
     background-color: var(--primary);
-    width: 68px;
-    /* border: none; */
+    width: 60px;
+    border: none;
+    margin: 2px;
+    border-radius: 2px;
 }
 
+.header__search-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-rgba);
+} 
+
 .header__search-btn-icon {
-    color: var(--fade-color);
+    color: var(--white-color);
     font-size: 1.6rem;
 }
 
@@ -411,4 +428,51 @@
 .header__footer-icon {
     color: var(--fade-color);
     font-size: 66px;
+}
+
+/* Search history */
+
+.header__search-history {
+    position: absolute;
+    right: 16px;
+    left: 0;
+    top: calc(100% + 6px);
+    background-color: var(--white-color);
+    box-shadow: 0 1px 5px #999;
+    border-radius: 2px;
+    display: none;
+}
+
+.header__history-heading {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--halffade-color);
+    margin-bottom: 8px;
+}
+
+.header__history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__history-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header__history-item {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: var(--fade-rgba);
+}
+
+.header__history-item:hover {
+    cursor: pointer;
+    background-color: var(--fade-color);
 }
