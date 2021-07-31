@@ -1,10 +1,10 @@
 :root {
-    --primary:#003d75;
-    --primary-rgba: rgba(0,61,117,0.8);
-    --secondary-color: #5188ca;
-    --halffade-color: #0165b9;
-    --fade-color: #a8c5e6;
-    --fade-rgba: rgba(168,197,230,0.2);
+    --primary:#003844;
+    --primary-rgba: rgba(0,56,68,0.8);
+    --secondary-color: #66a7af;
+    --halffade-color: #01565b;
+    --fade-color: #c5e0e7;
+    --fade-rgba: rgba(197,224,231,0.2);
     --white-color : #fff;
     --black-color: #000;
     --text-color: #333;
