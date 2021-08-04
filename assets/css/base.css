@@ -10,6 +10,7 @@
     --text-color: #333;
     --red-color: crimson;
     --star-yellow: rgb(238, 223, 18);
+    --background-color: #f5f5f5;
 
     --border-color: #f5f5f5;
     --header-height: 120px;
@@ -53,7 +54,7 @@ html {
     padding-right: 12px;
 }
 
-.grid__col-2-4 {
+.grid__col-3 {
     width: 25%;
     padding-left: 12px;
     padding-right: 12px;
@@ -159,12 +160,9 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 0 12px;
+    margin: 0 8px;
     cursor: pointer;
     position: relative;
-}
-
-.select-input__label {
-
 }
 
 .select-input__icon {
@@ -183,6 +181,7 @@ html {
     display: none;
     border-radius: 2px;
     box-shadow: 0 1px 5px var(--secondary-color);
+    z-index: 1;
 }
 
 .select-input__item a {
@@ -199,4 +198,39 @@ html {
 
 .select-input:hover .select-input__list {
     display: block;
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary);
+    color: var(--white-color);
+}
+
+.pagination-item--active:hover .pagination-item__link {
+    background-color: var(--primary-rgba);
+}
+
+.pagination-item__link {
+    --height: 34px;
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    min-width: 44px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
 }
