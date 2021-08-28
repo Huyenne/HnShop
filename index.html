@@ -7,14 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css" class="">
+    <link rel="stylesheet" href="./assets/css/grid.css" class="">
     <link rel="stylesheet" href="./assets/css/base.css" class="">
+    <link rel="stylesheet" href="./assets/css/responsive.css" class="">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
     <div class="main">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--separate header__navbar-item--show-qr">
                             <a href="" class="header__navbar-item-link">
@@ -125,12 +127,16 @@
                     </ul>
                 </nav>
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <label for="header__mobile-input" class="header__mobile-search">
+                        <i class="fas fa-search header__mobile-search-icon"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
                         <a href="#" class="">
                             <i class="fas fa-fish header__logo-img"></i>   
                         </a>
                     </div>
-                    <div class="header__name">Huyenne</div>
+                    <input type="checkbox" hidden id="header__mobile-input" class="header__mobile-input">
+                    <div class="header__name hide-on-mobile">Huyenne</div>
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" name="" id="" class="header__search-input input" placeholder="Bạn muốn tìm gì?">
@@ -245,12 +251,27 @@
                 </div>
 
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="app__container">
-            <div class="grid">
-                <div class="grid__row app__content">
-                    <div class="grid__col-2">
+            <div class="grid wide">
+                <div class="row app__content">
+                    
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fas fa-stream"></i>
@@ -272,8 +293,8 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__col-10">
-                        <div class="home-filter">
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="btn home-filter-btn">Phổ biến</button>
                             <button class="btn btn--primary home-filter-btn">Mới nhất</button>
@@ -307,9 +328,64 @@
                                 </div>
                             </div>
                         </div>
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__item-link">Tô chén và bát đũa nhó</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <div class="home-product">
-                            <div class="grid__row">
-                                <div class="grid__col-3">
+                            <div class="row">
+                                <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -355,7 +431,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__col-3">
+                                <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -401,7 +477,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__col-3">
+                                <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -447,7 +523,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__col-3">
+                                <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -493,7 +569,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__col-3">
+                                <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -539,7 +615,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__col-3">
+                                <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -585,7 +661,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__col-3">
+                                <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -631,7 +707,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                 <div class="grid__col-3">
+                                 <div class="col l-3 m-4 c-6">
                                     <!-- Home product item -->
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product/batlon.jpeg);"></div>
@@ -719,9 +795,9 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__col-3">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-3 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -735,7 +811,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__col-3">
+                    <div class="col l-3 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -749,7 +825,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__col-3">
+                    <div class="col l-3 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -772,7 +848,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__col-3">
+                    <div class="col l-3 m-8 c-12">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="./assets/img/qr_code.jpg" alt="qr_code" class="footer__download-qr-img">
@@ -789,7 +865,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <div class="grid">
+                <div class="grid wide">
                     <p class="footer__copyright">© 2021 - Bản quyền thuộc về Công ty Huyenne</p>
                 </div>
             </div>
