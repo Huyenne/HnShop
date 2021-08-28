@@ -49,6 +49,9 @@
 
 /* mobile */
 @media (max-width: 739px) {
+    :root {
+        --header-height: 55px;
+    }
     .hide-on-mobile {
         display: none;
     }
@@ -70,6 +73,7 @@
     }
     
     .app__content {
+        padding-top: 11rem;
         margin: 0 4px;
     }
     .header__search {
@@ -108,5 +112,18 @@
     }
     .footer__content {
         padding: 0 16px;
+    }
+    .footer__heading {
+        text-align: center;
+        height: 2rem;
+    }
+    .footer-item__link {
+        justify-content: center;
+    }
+    .footer__download {
+        justify-content: center;
+    }
+    .footer__download-app-link {
+        padding: 8px 10px;
     }
 }
